@@ -1,0 +1,143 @@
+/* 
+Blue: #3665AF
+Orng: #FF6802 
+*/
+
+a {text-decoration: none; transition: ease-in-out .5s; color: #3665AF;}
+a p:hover {color: #3665AF}
+p a:hover {color: black;}
+body {overflow-X: hidden;}
+
+/*****************Header*******************/
+#mobile, #adminBarTrigger {display: none;}
+
+.hr_main {width: 910px; background-color: #fff; padding: 15px; position: absolute; z-index: 10000;}
+.hd_t {display: table;}
+.hd {display: table-cell; vertical-align: middle;}
+
+.sb_wrp {height: 25px;}
+.sb_wrp, .mn_wrp, .hd_acc {cursor: pointer;}
+.sb_wrp p a {color: black;}
+.sb_wrp p a:hover {color: #3665AF}
+
+.mn_wrp p {display: inline-block; float: right; text-transform: capitalize; padding: 0px 15px; font-weight: 500; color: #3665AF;}
+.mn_wrp p:hover{color: black;}
+.sb_wrp p {font-size: 16px; display: inline-block; text-transform: capitalize; padding: 0px 15px; float: right; }
+
+.hd_acc {background-color: #FF6802; height: 60px; border-radius: 30px; width: 150px; transition: ease-in-out .5s;}
+.hd_acc i {color: white; font-size: 20px; padding-top: 10px; transition: ease-in-out .5s;}
+.hd_acc p {font-size: 16px; text-transform: capitalize; color: white; transition: ease-in-out .5s;}
+.hd_acc:hover {background-color: white; border: 2px solid #FF6802;}
+.hd_acc:hover>p, .hd_acc:hover>i, .hd_acc:hover>a p, .acc_out:hover>p {color: #FF6802}
+
+.acc_open {height: 30px; border: 2px solid #FF6802;}
+.acc_open p {padding-top: 6px;}
+.acc_out {padding-top: 10px; cursor: pointer;}
+.acc_out p {font-size: 16px; text-transform: capitalize; font-weight: 500;}
+
+.nav_sb, .nav_mn {display: inline-block; float: right;}
+
+.hr_admin {background-color: #3665AF;}
+.hr_admin p {font-size: 14px; text-align: center; float: none;}
+.hr_admin p a {color: white; padding: 12.5px; display: block;}
+.hr_admin p:hover {background-color: #FF6802;}
+
+
+/*****************Footer*******************/
+footer {background-color: lightgrey; height: 200px; padding: 35px 0px;}
+footer p {color: #3665AF; padding: 5px 0px;}
+.ft_cont p a {color: #3665AF}
+footer a p:hover, .ft_cont p a:hover {color: black;}
+
+.ft {vertical-align: top;}
+.ft_nav, .ft_sub {text-align: left; float: left;}
+.ft_nav, .ft {display: inline-block;}
+
+.ft_nav p {font-weight: 700;}
+.ft_sub p {text-transform: capitalize}
+
+footer img {display: block;}
+
+.ft_logo img {margin: 0 auto;width: 65px;}
+.ft_logo img:nth-child(2) {padding-top: 25px;width: 100%;}
+
+.ft_cont {text-align: right; float: right;}
+.ft_cont img {float: right; padding-bottom: 15px;}
+
+/****************Responsive****************/
+@media screen and (max-width: 1650px) {}
+@media screen and (max-width: 1250px) {}
+@media screen and (max-width: 1200px) {
+    .mn_wrp p {padding: 0px 5px;}
+}
+@media screen and (max-width: 1024px) {
+    #adminBarTrigger {display: block; border-bottom: 2px solid white;}
+    #adminBar {text-align: left; padding: 10px 25px;display: none; position: absolute; z-index: 99999; background-color: #3665AF;}
+    #adminBar p {padding: 0;}
+    .hr_admin p {padding: 10px 0; color: white !important;}
+    .hr_admin p:hover {background-color: transparent;}
+}
+@media screen and (max-width: 1000px) {
+    .hr_main  {position: relative;}
+    .hr_admin p {font-size: 18px;}
+    .acc .hero h1.main {padding-top: 0;}
+}
+@media screen and (max-width: 950px) {
+    /*Nav*/
+    .hr_main  {transform: scale(1);width: 100%;margin-top: 0 !important; padding:15px 0px}
+    .hd_logo img {width: 150px}
+    .hd_acc {background-color: #FF6802;height: 50px;border-radius: 25px;width: 125px;}
+    .hd_acc p {font-size: 14px;}
+    .hd_acc i {font-size: 17px;padding-top: 9px;}
+    .acc_open {height: 27.5px;}
+    /*Foot*/
+    footer {height: auto;}
+    .ft {width: 100% !important;text-align: center;}
+    .ft_nav a, .ft_sub a {display: inline-block;}
+    .ft_nav a {padding: 0px 25px;}
+    .ft_sub a {padding: 0px 15px;}
+    .ft_logo {padding: 50px 0px;}
+    .ft_logo img:nth-child(2) {width: 400px;}
+    .ft_cont {float: none;}
+    .ft_cont p:nth-child(1), .ft_cont p:nth-child(2) {display: inline-block;padding: 0px 25px;}
+    .ft_cont p:nth-child(3) {padding: 25px 0px;}
+    .ft_cont p br {content: '';}
+}
+@media screen and (max-width: 768px) {
+    header  {background-color: rgba(255,255,255,0.9); position: fixed; z-index: 9999999; border-bottom: 2px solid white;}
+    .hd_spacer {height: 86px;}
+    #desktop, #myAcc, #accOpen {display: none; visibility: hidden;}
+    #mobile {display: inline-block; width: 100px; height: 85px; position: absolute; right: 0; top: 0; background-color: #FF6802;}
+    
+    .hd_logo {float: left; padding-left: 25px;}
+    
+    #mobile img { width: 45px;}
+    #menuToggle {width: 100%; display: block;position: relative;top: 21.5px;;z-index: 1;-webkit-user-select: none;user-select: none;}
+    #menuToggle input { width: 100%; height: 100px; position: absolute; top: -25px; left: -5px; cursor: pointer; opacity: 0; z-index: 2; -webkit-touch-callout: none;}
+    #menuToggle input:checked ~ span { opacity: 1; transform: rotate(45deg) translate(-2px, -1px);  background: #232323; }
+    #menuToggle input:checked ~ span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); }
+    #menuToggle input:checked ~ ul { transform: translate(-375px,0); }
+    #menuToggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
+    #menu { position: absolute; width: 500px; padding: 30px 0px; margin-top:20px; background: rgba(36,96,176,0.9); list-style-type: none; -webkit-font-smoothing: antialiased; transform-origin: 0% 0%; transform: translate(500px, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); text-align:left; }
+    #menu p a {font-size: 22px; color: white; transition: ease-in-out .5s; display: block; padding: 10px 0 10px 50px;}
+    #menu p a i {transform: translateX(15vw);}
+    #menu p:hover {background-color: #FF6802}
+}
+@media screen and (max-width: 500px) {
+    /*Nav*/
+    .hr_main  {padding: 5px 0px;}
+    .hd_spacer {height: 66px;}
+    #mobile {height: 65px;}
+    #mobile img {width: 40px;}
+    #menuToggle {top: 14px;}
+    #menu {width: 400px;margin-top: 12px;}
+    #menuToggle input:checked ~ ul {transform: translate(-275px,0);}
+    /*Foot*/
+    .ft_logo img:nth-child(2) {width: 100%;}
+}
+@media screen and (max-width: 425px) {
+    #menu {width: 100vw;}
+}
+@media screen and (max-width: 400px) {
+    #menuToggle input:checked ~ ul {transform: translate(-225px,0);}
+}

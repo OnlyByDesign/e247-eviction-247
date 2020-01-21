@@ -1,0 +1,476 @@
+/*
+B: #3665AF
+O: #FF6802
+*/
+
+/*****************Errors*****************/
+#divPopupAlert, #flashMessage {position: absolute; z-index: 99999999; right: 0; left: 0; top: 25%; padding: 25px; background-color: white; outline: 2px solid orange; margin: 0 auto; width: 250px; font-size: 18px;}
+.error-message {float: left;}
+.cake-error {position: absolute; z-index: 9999999; background-color: #ebebeb; padding: 25px; left: 5%; top: 5%;}
+#divUpdateStatus {position: absolute; width: 35%; right: 0; left: 0; margin: 0 auto; background-color: white; text-align: center; z-index: 999999999;}
+
+/******************Hiding*****************/
+.popups, #divLeaseCleaningChargeFee, #divLeaseCarpetChargeFee, #divLeaseKeyChargeFee, #utilities-wrapper, #vehicle-wrapper, #commission-wrapper, #divLeaseTerminationDays, #divPopupNotification, #divPopupPropertyAddressBook, #divPopupAddressBook, #divPopupProvisionsList, #pet-wrapper,#guaranty-wrapper , #early-termination-wrapper, #divPopupDefendant, #formOptionsTrig, #divUpdateStatus, #divPopup {display: none;}
+
+
+
+/**********************************************************************
+******************************MAIN-PAGES*******************************
+***********************************************************************/
+
+/*******************************MAIN**********************************/
+
+/*****************Home Page*****************/
+.hr_bot {border-left: 50vw solid transparent; border-right: 50vw solid transparent; border-bottom: 4vw solid white; bottom: 0; position: absolute;}
+.hr_tri {z-index:0; top: 47.5%; transform: translateY(-47.5%); width: 250px;}
+.hr_img {top: 0; width: 100%; height: auto; z-index: -1; max-height: 43.25vw;}
+.mission {padding: 2.5vw 0px 5vw 0px;}
+h1.ms_head {font-size: 52px; color: #3665AF; font-weight: 500; padding-bottom: 0; letter-spacing: 0;}
+h1.ms_head span {color: #FF6802}
+.ms{padding: 15px 0px; display: block}
+.ms_txt {width: 65%; line-height: 150%;}
+.ms_strk { height: 4px; background-color: #FF6802; margin-top: 15px; margin-bottom: 7.5px;}
+#homeWrap .svc_wrap {padding: 75px 0;}
+.home.service {cursor: pointer;}
+.home.service .s1:hover, .home.service .s2:hover, .home.service .s3:hover {background-color: rgba(36,96,176,1)}
+.home.service .s4:hover {background-color: rgba(255,105,2,1)}
+
+/******************Forms-Page***************/
+.forms-main .content {margin-top: -50px;}
+.content {padding-bottom: 100px;}
+h1.ct {color: #3665AF; padding: 50px 0 25px 0; font-size: 50px; letter-spacing: 0px;}
+h1.ct span {color: #FF6802}
+
+/****************Contact-Page***************/
+.contact {position: absolute; height: 650px; top: 150px; z-index: 2; background-image: url('/img/dev/3.jpg'); background-size: cover;}
+.ct_ov {height: 100%; background-color: whitesmoke; background-blend-mode: multiply; position: absolute; z-index: -1; opacity: 0.75;}
+.ct_left, .ct_right {vertical-align: top; display: inline-block;}
+.contact input[type="submit"] {outline: none; border: none;}
+.contact input[type="submit"]:hover {outline: 2px solid #FF6802}
+
+/*****************Login-Page****************/
+.lg-wrap {position: relative;}
+.lg-wrap .hr_split {background-size: cover;-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH";}
+.login {height: 425px; top: 27.5%; position: absolute; z-index: 2; background-image: url(/img/dev/pexels-photo.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.lg .hr_sp {height: 55%;}
+.login .lg {padding-top: 15px; height: 35px;}
+.login .submit p {font-size: 16px;}
+.login .fm_input a p {font-size: 16px; letter-spacing: 0; text-align: left; padding: 10px; position: absolute;}
+
+/*****************Evict-Page****************/
+.evict .service p i {padding: 0 0 0 10px;}
+.evict .service {cursor: default;}
+.evict .calc {cursor: pointer;}
+.evict .calc:hover, .evict .service p a:hover {text-decoration: underline;}
+.evict .service p.link {width: 150px}
+.evict .service p a {color: white;}
+.evict #includedContent {display: none;}
+/*Calculator*/
+#calcClose {position: absolute; right: 0; cursor: pointer; color: #3665AF; top: 25px;}
+.divFeeDetails h2 {color: #3665AF; letter-spacing: 0; font-weight: 600;}
+.divCalculatorFee {font-weight: bold;}
+.strike {height: 3px; background-color: #FF6802; display: block; margin-top: 15px; margin-bottom: 25px;}
+.calculator {padding: 4% 0;}
+.calculator div {padding: 0 2.5%;}
+a.cboxElement {padding-top: 15px;}
+.calc_total p {text-transform: capitalize;}
+.calc_total i {padding-left: 25px;}
+
+
+
+/******************************ACCOUNT********************************/
+
+/******************Dashboard****************/
+.acc h2 {color: #3665AF;} .acc h3 {color: black;}
+.acc .content {padding: 50px 0 75px 0; display: inline-block;}
+.acc .content h1 {text-transform: capitalize; color: #3665AF;}
+.lease-wrapper, .notice-wrapper, .eviction-wrapper {border-top: 2px solid #3665AF; margin-left: -15px; padding-right: 30px; padding-top: 35px; padding-bottom: 35px;}
+.lease-detail, .notice-detail, .eviction-detail {display: none;} 
+
+/********************Info*******************/
+.expand-collapse {cursor: pointer;}
+.fee_agree {height: 400px; overflow-y: scroll; padding: 15px; outline: 2px solid #3665AF; margin-top: 25px; margin-bottom: 25px;}
+.fee_agree p {font-size: 14px;}
+.incomplete {color: #3665AF}
+.alert {color: #FF6802;}
+.info_wrap h2, .info_wrap h3, .info_wrap p.main {text-align: left; color: black;}
+.info_wrap h2 {font-weight: bold; text-transform: capitalize;}
+.info_wrap p.main {padding-bottom:25px; line-height: 25px; padding-top: 10px;}
+.fm-lease .info_wrap {padding-bottom:25px;}
+iframe .info_wrap {padding: 0;}
+.formFrame {border: none; height: 100%;}
+.tab {display: none;}
+.fld_notice h1 {padding-bottom: 50px;}
+.fld_notice div {flex-grow: 1; margin: 0 2.5%; vertical-align: top;}
+.fld_notice i {font-size: 48px; padding-bottom: 25px; color: #3665AF;}
+.fld_notice p {text-align: justify; padding: 0 2.5%; vertical-align: top;}
+.min_charge {margin-left: 15px;}
+.lease-wrapper i, .notice-wrapper i, .eviction-wrapper i {font-size: 18px; color: #3665AF;}
+
+/********************View*******************/
+.view-info-table {display: grid; grid-gap: 25px; grid-template-columns: repeat(auto-fill, minmax(40%,1fr)); font-size: 18px;}
+.view-info-table fieldset {padding: 25px;}
+.view-info-table h3 {padding-bottom:25px;}
+.view-info-table table {width: 100%; padding: 0 25px;}
+.view-info-table table tr  {text-align: left;}
+.view-info-table table tr td, .view-info-table dt, .view-info-table dd {float: left; width: 50%; text-align: left; padding: 5px 0;}
+.view-info-table dt {font-weight:bold;}
+.view-info-table dd {margin: 0;}
+.view-info-table table tr.altrow td {float: none; width: 25%; text-align: left; display: table-cell;}
+.payfield a, .payfield div {font-size: 18px;}
+.payfield dt {width: 45%; text-align: left; text-decoration: none; padding: 0;}
+.view-info-table ul {margin: 0 auto; padding: 0;}
+.view-info-table ul li {list-style-type: none;}
+#divClientFees div.left, #divClientFees div.right {width: 49%;}
+#divNoticeToPay1, #divNoticeToPay2, #divNoticeToPay3 {display: block; width: 100%;} 
+
+
+
+/**********************************************************************
+******************************PAGE-ITEMS*******************************
+***********************************************************************/
+
+/***************Hero-Items******************/
+/*
+Hero-Main
+*/
+.hero {height: 600px; overflow: hidden; position: relative; display: table;}
+.hr_mn {position: absolute; margin: 0 auto; left: 0; right: 0;}
+.hr_over {background-color: rgba(36,96,176,0.4); background-blend-mode: multiply; height: 100%; position: absolute; width: 100%; left: 0; top: 0; z-index: -1;}
+.hr_txt {z-index: 1; display: table-cell; vertical-align: middle; position: relative;}
+.hr_txt h1.sub {font-weight: 200; text-transform: uppercase; color: white;}
+.hr_txt h1 {text-transform: uppercase; color: white;}
+.hr_txt h2 {text-transform: capitalize; padding: 0px 25px; font-size: 20px;}
+.hr_txt h2:hover {color: #e6e6e6}
+.parallax-window {min-height: 100%; background: transparent; z-index: -2;}
+/*
+Hero-Alt
+*/
+.hr_alt {height: 950px;}
+.hero.lg {height: 750px;}
+.hr_split {object-fit: cover; position: absolute; left: 0; top: 0; height: 100%;}
+.hr_sp {width: 100%; height: 50%; z-index: 1; position: relative; background-blend-mode: multiply;}
+.hr_sp_1 {background-color: #3665AF; opacity: 0.5; border-bottom: 5px solid white;}
+.hr_sp_2 {background-color: black; opacity: 0.35;}
+.top .hero {height: 600px;}
+.hr_txt_alt {z-index: 1;}
+.hr_txt h1.main {font-size: 46px;}
+.hr_txt h1.sub {font-weight: 200;}
+/*
+Hero-Sub
+*/
+.hero_sub {position: relative; height: 275px; top: -136.5px; z-index: 2; overflow: hidden;}
+.hero_sub p {z-index: 1; position: absolute; top: 67.5px;}
+.hr_sb_over {background-color: #ebebeb; opacity: 0.8; height: 275px; position: absolute; z-index: 0;}
+.hero_sub img {position: absolute; z-index: -1; top: -75%;-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH";}
+/*
+Hero-Acc
+*/
+.acc .hero {height: 350px;}
+.acc .hr_over {background-color: black; opacity: .35;}
+.acc_txt {z-index: 1;}
+.acc .hero h1.main {font-weight: normal; text-transform: capitalize; color: white; padding-top: 3%;}
+.acc .hero h1.main span {font-weight: bold; color: #FF6802;}
+.acc .hero i {font-size: 42px;}
+
+/**************Service-Items***************/
+/*
+Main
+*/
+.service {height: 100%; display: table; background-image: url('http://dev.eviction247.com/img/dev/services-bg.jpg'); background-size: cover; background-position: center;}
+.service h2, .service p {color: white; transition: ease-in-out .5s;}
+.service h2 {text-transform: uppercase; font-weight: 700; padding-bottom: 10px;}
+.service p {font-weight: 500; transition: ease-in-out .5s;}
+.service .btn-white p {color: #3665AF;}
+.service .btn-white:hover p {color: white;}
+.s1, .s2, .s3, .s4 {background-blend-mode: multiply; transition: ease-in-out .5s;}
+.s1, .s3 {margin-left: -5px !important; padding-right: 5px;}
+.s2, .s4 {margin-right: -5px !important; padding-left: 5px;}
+.s1, .s2, .s3 {background-color: rgba(36,96,176,0.85)}
+.s4 {background-color: rgba(255,105,2,0.85)}
+.svc_mn {display: inline-table; vertical-align: top; outline: 2px solid #fff; transition: ease-in-out .5s; margin-top: -2px !important;}
+.svc_wrap {display: table-cell; vertical-align: middle; padding: 75px 0;}
+.svc_mn img {display: table-cell; padding-bottom: 25px; vertical-align: middle; height: 75px;}
+.svc_mn p:hover {color: white !important;}
+.btn-white-out p:hover {color:#3665AF !important}
+/*
+Sub
+*/
+.sub .hero_sub p {top: 3vw;}
+.sub .content {margin-top: -50px; padding-bottom: 0px;}
+.sub .fm_item {padding: 0; height: 325px;}
+.sub .fm_item h2 {color: #3665AF; transition: ease-in-out .5s; padding: 12.5px 0; font-weight: 700;}
+.sub .fm_item p {padding: 0;}
+.sub .fm_item:hover>a h2 {opacity: 0;}
+.sub .service p {font-weight: 400;}
+.sub .service p i {font-size: 20px; padding: 0 0 0 25px;}
+.sub .service .cta {padding-top: 15px; height: 35px;}
+.sub .service .cta h3 {color: white; font-weight: 900; letter-spacing: 0;}
+.sub .service strong {color: white;}
+.sub .service em {color: white; text-transform: none; font-style: normal; font-weight: 400; font-size: 18px;}
+
+/****************Field-Items****************/
+/*
+Search
+*/
+.search {top: -75px; position: relative; max-height: 30px; height: 30px;}
+.fm_input, .fm_input_alt, .table td {z-index: 1; padding: 0 10px; vertical-align: top;}
+.table td:last-child {padding-right:0;}
+.fm_input i {position: absolute; top: 10px; right: 25px; float: right; font-size: 22px; color:  #3665AF; z-index: -1}
+.fm_input .filter {padding: 0px 20px; -webkit-appearance: none; color: #3665AF; font-size: 18px; z-index: 1; background-color: transparent; outline: 2px solid #3665AF;}
+
+.fm_submit {vertical-align: top; padding-top: 2.5px; z-index: 1;}
+.fm_submit i {position: relative; top: 27.5px; right: 15px; float: right; font-size: 18px; color: white; transition: ease-in-out .5s; cursor: pointer;}
+.fm_submit input {vertical-align: top; color: white !important; text-transform: capitalize; font-style: normal; font-weight: bold; letter-spacing: 1px;}
+.fm_input_alt .filter {padding: 7px 20px; -webkit-appearance: none; outline: 2px solid #3665AF; color: #3665AF; font-size: 18px; cursor: text; z-index: 1; background-color: transparent; text-align: left;}
+.fm_submit:hover>i {transform: translateX(-5vw); color: #FF6802; z-index: 1;}
+.fm_submit:hover>input {background-color: transparent; z-index:2; outline: 2px solid #FF6802;}
+.fm_submit {padding-top: 0;}
+.fm_submit:hover>input {color: #FF6802 !important;}
+
+.forms-main select, select option {cursor: pointer; border: 2px solid #3665AF; -webkit-appearance: none; -moz-appearance: none; text-overflow: '';}
+/*
+Info
+*/
+.acc input:not(input[type="submit"]), .acc select, .acc textarea {position: relative; height: 35px; line-height: 35px; outline: 2px solid #3665AF; text-align: left; font-size: 18px !important; border: none;}
+.info_wrap {padding: 0 12.5px; vertical-align: top;}
+.info_wrap h3 {font-size: 21px; color: #3665AF; padding: 0 0 10px 0; float: left; width: 100%;}
+.input {position: relative; height: 35px; line-height: 35px;}
+.fm_date {margin-top:-4px;}
+.fm_date p {font-size: 18px; padding-top: 7.5px;}
+.fm_date input {padding-left: 0 !important; outline: 2px solid #3665AF; padding: 5px 0;}
+.fm_text {margin-top: 0; flex-grow: 1;}
+.fm_text.right {margin-right: 10px;}
+.fm_input select, .fm_text input, .fm_per select, .fm_text select, .fm_text textarea {outline: 2px solid #3665AF; text-align: left; font-size: 18px !important; border: none;}
+.info .right {padding-right: 0;}
+.info p.mob {display: none;}
+.fm_input {padding-bottom: 15px; position: relative; font-size: 18px;}
+.login .fm_input {padding-bottom: 50px;}
+.fm_input input, .fm_input select, select.fm_input, .fm_input textarea {text-align: left; padding-left: 10px; color: #3665AF; font-size: 18px !important; padding: 0; margin-bottom: 5px; margin-top: 5px; font-weight: bold; letter-spacing: .5px;}
+.login .fm_input select {height: 30px;}
+.fm_input span {color: #3665AF; padding-top: 10px; margin-bottom: -10px; position: relative;}
+.fm_input input#LeaseRentLateFeeDaily {margin-right: 2%;}
+/*
+Radio
+*/
+[type="radio"]:checked, [type="radio"]:not(:checked) {position: absolute; left: -9999px;}
+[type="radio"]:checked + label, [type="radio"]:not(:checked) + label {position: relative; padding-left: 35px; cursor: pointer; line-height: 20px; display: inline-block; color: #000; width: max-content; font-size: 18px; padding-bottom: 7.5px; padding-right: 25px; float: left;}
+[type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 18px; border: 1px solid #3665AF; border-radius: 100%; background: #fff;}
+[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {content: ''; width: 12px; height: 12px; background: #3665AF; position: absolute; top: 4px; left: 4px; border-radius: 100%; -webkit-transition: all 0.2s ease; transition: all 0.2s ease;}
+[type="radio"]:not(:checked) + label:after {opacity: 0; -webkit-transform: scale(0); transform: scale(0);}
+[type="radio"]:checked + label:after {opacity: 1; -webkit-transform: scale(1); transform: scale(1);}
+/*
+Checkbox
+*/
+[type="checkbox"]:not(:checked),[type="checkbox"]:checked {position: absolute; left: -9999px;}
+[type="checkbox"]:not(:checked) + label,[type="checkbox"]:checked + label {position: relative; padding-left: 1.95em; cursor: pointer;}
+[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {content: ''; position: absolute; left: 0; top: 0; width: 1.25em; height: 1.25em; border: 2px solid #3665AF; background: #fff; box-shadow: inset 0 1px 3px rgba(0,0,0,.1);}
+[type="checkbox"]:not(:checked) + label:after,[type="checkbox"]:checked + label:after {content: '\f00c'; position: absolute; top: 7px; left: .275em; font-size: 16px; line-height: 0.8; color: #3665AF; transition: all .2s; font-family: Helvetica, Arial, sans-serif; font-family: 'Font Awesome 5 Free'; font-weight: 900;}
+[type="checkbox"]:not(:checked) + label:after {opacity: 0; transform: scale(0);}
+[type="checkbox"]:checked + label:after {opacity: 1; transform: scale(1);}
+[type="checkbox"]:disabled:not(:checked) + label:before, type="checkbox"]:disabled:checked + label:before {box-shadow: none; border-color: #bbb;background-color: #ddd;}
+[type="checkbox"]:disabled:checked + label:after {color: #999;}
+[type="checkbox"]:disabled + label {color: #aaa;}
+[type="checkbox"]:checked:focus + label:before, [type="checkbox"]:not(:checked):focus + label:before {border: 2px solid #3665AF;}
+
+.checkbox {width: 30%; font-size: 18px; display: inline-block; margin-right: auto;}
+#div3DayPost1 .checkbox, #div3DayPost2 .checkbox, #div3DayPost3 .checkbox, #div3DayPost4 .checkbox {width: auto}
+/*
+Tables
+*/
+table {display: table; width: 100%;}
+tr a, tr td, tr th {font-size: 18px; padding: 10px 0; vertical-align: top;}
+table a:hover {color: black;}
+li.link a {float: right; font-size: 18px;}
+/*
+Row Table
+*/
+#vehicle-table td.flex, .petRow td.flex {width: 17.5%; display: inline-block;}
+/*
+DL Tables
+*/
+dl {font-size: 18px;}
+.dl dt, .dl dd {display: inline-block; width:45%; line-height: 30px;}
+.dl dt {float: left;font-weight: bold;}
+.dl dd {float:right;}
+/*
+Submit
+*/
+.sbmt {height: 35px; padding-top: 10px; padding-left: 20px;}
+.acc .sbmt{padding: 0;}
+.sbmt .captcha, .sbmt .btn-orng, .sbmt input {vertical-align:top;}
+.sbmt .btn-orng {max-width: 150px; height: 35px; outline: 2px solid #FF6802;}
+.acc .sbmt .btn-orng {max-width: 100%;}
+.sbmt .captcha {float: left;}
+.sbmt .captcha img {width: 7.5vw; padding-top: 7.5px;}
+.sbmt .captcha p {text-transform: capitalize; padding-top: 10px; font-size: 18px; cursor: pointer;}
+.sbmt .captcha p:hover {color: #3665AF}
+.sbmt a {position: absolute;}
+.sbmt div a {position: relative;}
+.sbmt input {text-align: left; padding-left: 10px; height: 35px;}
+/*
+Defaults
+*/
+#cakecaptcha {padding-bottom: 10px; max-width: 150px;}
+#change-image {color: black; font-size: 14px;float: left; display: block; width: 100%;}
+
+input:focus {outline-offset: 0;}
+input[type="date"]::before {content: attr(data-placeholder); width: 100%;}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }
+input[type="radio" i] {}
+input[name="submit"], input[type="submit"] {text-align: center !important; padding-left: 0 !important;}
+input, textarea {width: 100%; height: 100%; font-weight: normal; color: #3665AF !important; font-style: normal; padding-left: 10px !important; border: none; font-size: 100%; box-sizing : border-box;}
+.msg textarea {height: 100px; max-height: 100px !important; padding-top: 10px !important; min-height: 100px !important; box-sizing : border-box; margin: 0;}
+.lrg-msg textarea {height: 200px; max-height: 200px !important; padding-top: 10px !important; min-height: 200px !important; box-sizing : border-box;}
+.xs-msg textarea {width: 100%; max-width: 100% !important; min-width: 100% !important; box-sizing : border-box;}
+div.msg {height: 100px;}
+
+::-webkit-input-placeholder {opacity: 0.5; font-style: italic;}
+::-moz-placeholder {opacity: 0.5; font-style: italic;}
+:-ms-input-placeholder {opacity: 0.5; font-style: italic;}
+:-moz-placeholder {opacity: 0.5; font-style: italic;}
+
+/*****************Box-Items****************/
+/*
+Featured
+*/
+.fm_item {position: relative; cursor: pointer; height: 250px; transition: ease-in-out .5s; padding: 0px 1.5% 0 1.5%; margin-bottom: 50px; vertical-align: top;}
+.fm_item i {font-size: 52px; padding: 25px; border-radius: 50%; border: 5px solid #3665AF; transition: ease-in-out .5s; width: 55px; height: 55px;}
+.fm_item p {text-transform:capitalize; padding-top: 25px; font-size: 18px;}
+.fm_bot {position: absolute; bottom: 0; opacity:0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 40px solid white; width: 0px; transition: ease-in-out .5s;}
+.fm_item:hover {background-color: #3665AF;}
+.fm_item:hover>a i {color: white;}
+.fm_item:hover>a p, .fm_item p:hover {color: white !important; transform: translateY(-35px);}
+.fm_item:hover>a .fm_bot {opacity: 1;}
+/*
+Results
+*/
+.fnd .fm_item {height: 250px;}
+.fnd_lst div {display: flex; flex-direction: column; border-top: 2px solid #3665AF; cursor: pointer; transition: ease-in-out .5s;}
+.fnd_lst div:nth-last-child(1) {border-bottom: 2px solid #3665AF}
+.fnd_lst p {text-transform: capitalize; max-width: 90%; flex: 1; padding: 25px 0;}
+.fnd_lst i {font-size: 21px; transition: ease-in-out .5s; flex: 1; padding: 25px 0;}
+.fnd_lst div:hover {background-color: #3665AF;}
+.fnd_lst div:hover>a p {color: white; padding-left: 25px;}
+.fnd_lst div:hover>a i {color: white; padding-right: 25px;}
+.fnd_cnt {background-color: #ebebeb; height: 50px; cursor: pointer; margin-top: 50px;}
+.fnd_cnt p {padding-top: 12.5px; text-transform: uppercase; font-weight: 500;}
+/*
+Acc-Tabs
+*/
+.db_tab {border-bottom: 3px solid #3665AF;}
+.tab_mob {display: none;}
+.tab_acc {background-color: #3665AF; position: absolute; margin-top: -50px; flex-grow: 1; z-index: 2;}
+.adminTab .tb_item {width: 24.75% !important;}
+.tb_item {height: 50px; background-color: white; cursor: pointer; width: 20%;}
+.tb_item.current {background-color: #3665AF;}
+.tb_item.current a p {color: white;}
+.tb_item:last-child {border-right: none;}
+.tb_item a p {font-size: 16px; text-transform: capitalize; padding: 15px 0; font-weight: 500;}
+.tb_item:hover, .tb_item.active {background-color: #3665AF;}
+.tb_item:hover>a p, .tb_item.active a p {color: white;}
+.hilite {background-color: #3665AF; border-top: 3px solid #3665AF;}
+.hilite p, .hilite i {color: white;}
+.hilite p {font-size: 16px; padding: 8px 0 10px 0;}
+.hilite i {font-size: 18px; padding-left: 15px; cursor: pointer;}
+/*
+Progress
+*/
+.progress {padding: 25px 0 75px 0;}
+.pg_icon {font-size: 42px; color: #3665AF; padding: 17px; border: 3px solid #3665AF; width: 40px; height: 40px; border-radius: 50%;}
+.pg_strike {width: 10%; height: 3px; background-color: #3665AF; vertical-align: middle; margin-top: -25px; margin-left: -5px; margin-right: -5px;}
+.pg_icon.current {color: #FF6802; border-color: #FF6802;}
+.progress_alt {padding-top: 50px;}
+span.pg_text {padding: 0px 20px; font-weight: 500; color: black; font-size: 16px; line-height: 28px;}
+span.active {color: #FF6802}
+/*
+Acc-Box
+*/
+.box {padding-top: 40px; vertical-align: top;}
+.box .fm_item {padding: 0 0 25px 0; outline: 2px solid #3665AF; margin: 0 2.5%;}
+.box h2.box_h1 {color: white; height: 50px; padding-top: 20px; background-color: #3665AF; text-transform: uppercase; font-weight: 500;}
+.box h2.box_h2 {color: #3665AF; font-weight: 700; font-size: 30px; letter-spacing: 0;}
+.box p {color: black; font-weight: 600; text-transform: uppercase; font-size: 20px;}
+.box h2 sup:nth-child(2) {vertical-align: bottom; margin-bottom: 5px;}
+.box .fm_item:hover {outline: none;}
+.box .fm_item:hover>a h2 {color: white;}
+.box .fm_item:hover>a p, .box .fm_item:hover>a h2 {transform: translateY(0);}
+.box .fm_item:hover>a .box_wrap {margin-top: -25px;}
+/*
+Status
+*/
+.acc_srch {padding-bottom: 50px;}
+.status {display: inline-table; height: 35px; width: 375px; padding-left: 1.5%;}
+ul.act_list {padding: 0; margin: 0; display: table-cell; vertical-align: middle;}
+.act_list i {font-size: 20px; color: #3665AF;}
+.act_list li {font-size: 16px; vertical-align: top; color: black; text-align: left;}
+.act_list li a {padding-left: 10px; color: black;}
+#statusTrig {display: none;}
+/*
+Cycle
+*/
+.fld_cycle {padding: 30px 0;}
+.fld_nav {border: 2px solid #3665AF; padding: 10px; cursor: pointer; position: relative; background-color: transparent;}
+.fld_nav i {font-size: 24px; padding: 0 15px;}
+.fld_nav p {text-transform: capitalize; color: #3665AF; font-weight: 500; top: 10px; position: absolute;}
+#nextBtn p {right: 15px;} #prevBtn p {left: 15px;}
+.fld_nav:hover {background-color: #3665AF;}
+.fld_cycle .btn-#3665AF:hover {font-weight: 500;}
+.fld_nav:hover>p, .fld_nav:hover>i, .fld_nav:hover>#btnSave {color: white !important;}
+button #btnSave {background-color: transparent; font-size: 18px; font-weight: 500; top: 0; position: absolute; cursor: pointer;}
+/*
+Add-Box
+*/
+.if_box {cursor: pointer; display: inline-table;}
+.if_box i {font-size: 36px; color: #3665AF;}
+.if_box p {text-transform: capitalize; font-size: 16px; padding-right: 10px; display: table-cell; vertical-align: middle;}
+.if_box:hover>i {color: #FF6802;}
+/*
+Acc-Actions
+*/
+.actions ul {vertical-align: top; list-style-type: none;}
+
+.actions ul li {float: left; text-align: left; display: block; width: 100%;}
+/*
+User-Info
+*/
+.user-wrap {padding: 0 0 25px 0;}
+.user-wrap p {padding: 5px 20px 5px 0;}
+.user-wrap p strong {color: #3665AF;}
+/*
+Remember
+*/
+.fm_mem {width: 100%; cursor: pointer; z-index: 2; position: relative; left: 15px; margin-right: auto;}
+.chk-fld .fm_mem {top: 0; left: 0;}
+.fm_check {width: 20px; height: 20px;}
+.fm_mem label {font-size: 18px; vertical-align: top; padding-right: 15px;}
+/*
+Popups
+*/
+.popups {top: 25%; width: 35%; background-color: white; z-index: 999; position: fixed; right: 0; left: 0; margin: 0 auto; border: 2px solid #3665AF; padding: 25px;}
+.popups .popupStyle2 {outline: 2px solid #3665AF;}
+.popups .inner_padding {margin-bottom: 10px;}
+
+.popups .inner_padding .left, .popups .inner_padding .submit {width: 25%; margin: 0 auto; text-align: center; float: none !important; display: inline-block; height: 35px; line-height: 35px; vertical-align: top; outline: 2px solid #3665AF; margin: 25px 25px 0 25px; font-size:18px;}
+.popups label {font-size: 18px; float: left; text-align: left; padding-top: 15px;}
+.popups input, .popups textarea, .popups select, .popups textarea {height: 100%; width: 100% !important; font-weight: normal; color: #3665AF !important; font-style: normal; padding-left: 10px !important; border: none; font-size: 100%; box-sizing: border-box; outline: 2px solid #3665AF; text-align: center; margin: 0 auto !important; cursor: pointer; height: 35px; text-align: left; font-size: 18px;}
+.popups .input {height: auto;}
+
+.popups table {width: 100%; text-align: left; padding: 0 50px; border-collapse: separate; border-spacing: 0 15px;}
+.popups .ui-dialog-titlebar {padding-top:25px;}
+.popups .ui-dialog-titlebar span {color: #3665AF; font-size: 24px; font-weight: bold;}
+.popups table tr {outline: 2px solid #3665AF; padding-bottom: 20px;}
+.popups table tr:first-child {outline: none; padding-bottom: 0;}
+.popups table tr td {padding:10px;}
+.popups table td input[type="radio"]:checked, .popups table [type="radio"]:not(:checked) {position: unset; left: 0; width: 20px !important; outline: none;}
+/*
+Misc.
+*/
+.acc_link div {text-align: left;}
+.paging {font-size: 16px; text-transform: capitalize; padding: 15px 0;}
+
+/*
+B: #3665AF
+O: #FF6802
+*/
