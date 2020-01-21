@@ -1,4 +1,4 @@
-A website I had brought onto the project reel in 2017, soon after leaving school.
+**bold A website I had brought onto the project reel in 2017, soon after leaving school.
 
 I was not prepared for this extensive of a project, but learning the platform was worth it.
 I'm glad I took it on in the end, because it taught me the value of my own work.
